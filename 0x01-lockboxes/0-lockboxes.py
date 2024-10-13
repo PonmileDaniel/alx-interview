@@ -21,3 +21,4 @@ def canUnlockAll(boxes):
                     stack.append(key)
 
     return len(visited) == n
+
