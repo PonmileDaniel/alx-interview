@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-Define isWinner function, a soln to the prime 
+Define isWinner function, a soln to the prime
 """
+
 
 def sieve_of_eratosthenes(max_n):
     """Precomputes prime numbers and their cumulative count up to max_n."""
