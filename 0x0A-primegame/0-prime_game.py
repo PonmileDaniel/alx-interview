@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""
+Define isWinner function, a soln to the prime 
+"""
 
 def sieve_of_eratosthenes(max_n):
     """Precomputes prime numbers and their cumulative count up to max_n."""
     is_prime = [True] * (max_n + 1)
     is_prime[0] = is_prime[1] = False
     prime_count = [0] * (max_n + 1)
-
     for i in range(2, max_n + 1):
         if is_prime[i]:
             for multiple in range(i * i, max_n + 1, i):
